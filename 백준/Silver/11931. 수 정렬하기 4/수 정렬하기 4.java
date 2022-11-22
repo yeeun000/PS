@@ -5,13 +5,13 @@ public class Main {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb=new StringBuilder();
         int N=Integer.parseInt(br.readLine());
-        ArrayList<Integer> arr=new ArrayList<>();
+        int arr[]=new int[N];
         for(int i=0;i<N;i++){
-            arr.add(Integer.parseInt(br.readLine()));
+            arr[i]=(Integer.parseInt(br.readLine()));
         }
-        Collections.sort(arr);
+        Arrays.sort(arr);
         for(int i=0;i<N;i++){
-            sb.append(arr.get(N-1-i)).append("\n");
+            sb.append(arr[N-1-i]).append("\n");
         }
         System.out.println(sb);
     }
